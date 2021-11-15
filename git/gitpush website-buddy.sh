@@ -25,7 +25,7 @@ echo "Target: $repo_id"
 echo "User: $git_user"
 echo "UserEmail: $git_email"
 echo "Commit Name: $commit"
-read -p "? " -n 1 -r
+read -p "Do you want to commit with these settings?" -n 1 -r
 echo ""
 
 if [[ ! $REPLY =~ ^[Yy]$ ]]
