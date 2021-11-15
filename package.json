@@ -1,19 +1,44 @@
 {
-  "name": "website-buddy",
-  "version": "1.0.0",
-  "description": "Makes the best websites pretty easily.",
-  "main": "main.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "_from": "git+https://github.com/alexstevovich/website-buddy.git",
+  "_id": "website-buddy@1.0.0",
+  "_inBundle": false,
+  "_integrity": "",
+  "_location": "/website-buddy",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "git",
+    "raw": "https://github.com/alexstevovich/website-buddy",
+    "rawSpec": "https://github.com/alexstevovich/website-buddy",
+    "saveSpec": "git+https://github.com/alexstevovich/website-buddy.git",
+    "fetchSpec": "https://github.com/alexstevovich/website-buddy.git",
+    "gitCommittish": null
   },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "git+https://github.com/alexstevovich/website-buddy.git#6a021a5359510302e923c3f9d3dd82df705a4300",
+  "_spec": "https://github.com/alexstevovich/website-buddy",
+  "_where": "C:\\Users\\16C24E\\Desktop\\ScribeFinal\\web_ceo",
+  "author": {
+    "name": "Alex Stevovich"
+  },
+  "bugs": {
+    "url": "https://github.com/alexstevovich/website-buddy/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "Makes the best websites pretty easily.",
+  "homepage": "https://github.com/alexstevovich/website-buddy#readme",
+  "license": "SEE LICENSE IN license.md",
+  "main": "main.js",
+  "name": "website-buddy",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/alexstevovich/website-buddy.git"
   },
-  "author": "Alex Stevovich",
-  "license": "SEE LICENSE IN license.md",
-  "bugs": {
-    "url": "https://github.com/alexstevovich/website-buddy/issues"
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "homepage": "https://github.com/alexstevovich/website-buddy#readme"
+  "version": "1.0.0"
 }

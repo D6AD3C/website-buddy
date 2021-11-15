@@ -5,7 +5,7 @@ module.exports =  class pod {
   
   constructor() 
   {  
-    this.Content = ""
+    this.content = ""
   }
 
   PrintLog(Text)
@@ -24,23 +24,23 @@ module.exports =  class pod {
     if(fs.existsSync(Path))
     {   
       console.log("Doc: "+Path+": Found")
-      this.Content = fs.readFileSync(Path, {encoding:'utf8', flag:'r'})
+      this.content = fs.readFileSync(Path, {encoding:'utf8', flag:'r'})
     }
     else
     {
       console.log("Doc: "+Path+": Missing")
-      this.Content =  undefined;
+      this.content =  undefined;
     }
   } 
 
   addContent(MoreContent)
   {
-    this.Content+=MoreContent
+    this.content+=MoreContent
   }
 
   replaceAll(target,goal)
   {
-  	this.Content = this.Content.replaceAll(target, goal)
+  	this.content = this.content.replaceAll(target, goal)
   }
 
   setOutputPath(path_output, file, dir)
@@ -75,13 +75,13 @@ module.exports =  class pod {
 
   setContent(string)
   {
-  	this.Content = string
+  	this.content = string
     return this
   }
 
   getContent()
   {
-    return this.Content
+    return this.content
   }
 
   setLinks(ForWeb)
@@ -93,8 +93,8 @@ module.exports =  class pod {
       root_path += "../"
     }
 
-      this.Content = this.Content.replaceAll("<@root>",root_path)
-      this.Content = this.Content.replaceAll("<@index>","index.html")
+      this.content = this.content.replaceAll("<@root>",root_path)
+      this.content = this.content.replaceAll("<@index>","index.html")
   }
 
   msg(text)
@@ -105,6 +105,6 @@ module.exports =  class pod {
 
   output()
   {
-  	fs.writeFileSync(path.join(this.abspath,this.file), this.Content);
+  	fs.writeFileSync(path.join(this.abspath,this.file), this.content);
   }
 }
