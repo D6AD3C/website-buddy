@@ -37,7 +37,7 @@ fi
 
 git add --all
 git commit -m $commit
-git push https://alexstevovich:$passwordrd@github.com/$user_id/$repo_id.git main
+git push https://alexstevovich:$password@github.com/$user_id/$repo_id.git main
 
 echo ""
 read -p "All Done! Press any key to close ..."
