@@ -1,6 +1,9 @@
 echo Name the commit:
 read commit
 
+echo Password:
+read password
+
 cd ..
 
 user="Alex"
@@ -34,7 +37,7 @@ fi
 
 git add --all
 git commit -m $commit
-git push https://$user_id@github.com/$user_id/$repo_id.git main
+git push https://$user_id:$password@github.com/$user_id/$repo_id.git main
 
 echo ""
 read -p "All Done! Press any key to close ..."
